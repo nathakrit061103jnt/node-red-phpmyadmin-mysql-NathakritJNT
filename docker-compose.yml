@@ -18,7 +18,7 @@ services:
       container_name: appsDB
       restart: always
       ports:
-       - '6603:3306'
+       - '3306:3306'
       networks:
        - node-red-net
       environment:
@@ -32,7 +32,7 @@ services:
       container_name: phpmyadmin
       restart: always
       ports:
-       - '8080:80'
+       - '80:80'
       networks:
        - node-red-net
       environment:
